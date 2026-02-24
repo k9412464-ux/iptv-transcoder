@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPTV Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+<div id="sidebar">
+  <form id="playlist-form">
+    <input id="playlist-url" type="text" placeholder="Enter M3U playlist URL">
+    <button type="submit">Load Playlist</button>
+  </form>
+
+  <div id="search-box">
+    <input id="search" type="text" placeholder="Search channels...">
+  </div>
+
+  <div id="channels"></div>
+</div>
+
+<div id="main">
+  <div id="video-container">
+    <video id="player" controls></video>
+    <div id="status">No channel loaded</div>
+  </div>
+</div>
+
+<script src="player.js"></script>
+</body>
+</html>
